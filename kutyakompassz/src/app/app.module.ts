@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MapComponent } from './home/map/map.component';
+import { TemporaryAdoptationComponent } from './temporary-adoptation/temporary-adoptation.component';
+import { SearchDogComponent } from './search-dog/search-dog.component';
+import { FoundDogComponent } from './found-dog/found-dog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MapComponent
+    MapComponent,
+    TemporaryAdoptationComponent,
+    SearchDogComponent,
+    FoundDogComponent
   ],
   imports: [
     BrowserModule,
