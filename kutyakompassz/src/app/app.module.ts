@@ -3,13 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { MapComponent } from './home/map/map.component';
-import { TemporaryAdoptationComponent } from './temporary-adoptation/temporary-adoptation.component';
-import { SearchDogComponent } from './search-dog/search-dog.component';
-import { FoundDogComponent } from './found-dog/found-dog.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { MapComponent } from './components/home/map/map.component';
+import { TemporaryAdoptationComponent } from './components/temporary-adoptation/temporary-adoptation.component';
+import { SearchDogComponent } from './components/search-dog/search-dog.component';
+import { FoundDogComponent } from './components/found-dog/found-dog.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -20,11 +28,18 @@ import { FooterComponent } from './footer/footer.component';
     SearchDogComponent,
     FoundDogComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatMenuModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
