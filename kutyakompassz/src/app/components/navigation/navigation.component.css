@@ -1,0 +1,19 @@
+.title {
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+img {
+    width: 5%;
+    height: auto;
+}
+
+.buttons {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
