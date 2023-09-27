@@ -8,6 +8,8 @@ import { MapComponent } from './home/map/map.component';
 import { TemporaryAdoptationComponent } from './temporary-adoptation/temporary-adoptation.component';
 import { SearchDogComponent } from './search-dog/search-dog.component';
 import { FoundDogComponent } from './found-dog/found-dog.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FoundDogComponent } from './found-dog/found-dog.component';
     MapComponent,
     TemporaryAdoptationComponent,
     SearchDogComponent,
-    FoundDogComponent
+    FoundDogComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
