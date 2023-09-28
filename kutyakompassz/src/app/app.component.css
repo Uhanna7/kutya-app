@@ -1,11 +1,17 @@
-.header {
+app-header {
     height: 7.5vh;
+    padding: 0;
 }
 
-.home {
-    height: 82.5vh;
+app-footer {
+    height: 20vh;
+    background-color: #000000de;
 }
 
-.footer {
-    height: 10vh;
+.content {
+    height: 85vh;
+}
+
+.header-phone {
+    height: 35vh;
 }

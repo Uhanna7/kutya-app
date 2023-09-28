@@ -1,14 +1,16 @@
 <div class="w-full h-full container">
-    <mat-toolbar color="primary">
-        <div class="title">
-            <img src="../assets/logo.png" alt="logo">
-            <span>Kutyakompassz</span>
-        </div>
-        <div class="buttons">
-            <button mat-button routerLink="/home">Kezdőlap</button>
-            <button mat-button routerLink="/found">Kutyát találtam!</button>
-            <button mat-button routerLink="/search">Kutyát keresek!</button>
-            <button mat-button routerLink="/adoptation">Ideiglenes befogadóink</button>
+    <mat-toolbar class="w-full h-full" color="primary">
+        <div class="flex flex-nowrap align-items-center w-full h-full content" [ngClass]="{'phone': isPhonePortrait}">
+            <div class="flex align-items-center w-3 title">
+                <img class="logo" src="../assets/logo.png" alt="logo" [ngClass]="{'phone': isPhonePortrait}">
+                <span>KUTYAKOMPASSZ</span>
+            </div>
+            <div class="flex justify-content-end gap-3 w-9 buttons">
+                <button routerLinkActive="active" mat-button routerLink="/home">Kezdőlap</button>
+                <button routerLinkActive="active" mat-button routerLink="/found">Kutyát találtam!</button>
+                <button routerLinkActive="active" mat-button routerLink="/search">Kutyát keresek!</button>
+                <button routerLinkActive="active" mat-button routerLink="/adoptation">Ideiglenes befogadóink</button>
+            </div>
         </div>
     </mat-toolbar>
 </div>

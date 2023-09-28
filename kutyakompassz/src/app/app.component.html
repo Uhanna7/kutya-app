@@ -1,13 +1,17 @@
-<div class="grid justify-content-center w-full">
-    <div class="flex flex-column align-content-center align-items-center justify-content-center w-screen header">
-        <app-header></app-header>
-    </div>
-    <div class="flex flex-column flex-wrap align-content-center align-items-center justify-content-center home">
-        <div>
-            <router-outlet></router-outlet>        
+<div class="grid justify-content-center align-content-center gap-4 w-full" style="margin: 0">
+    <div class="flex align-items-center justify-content-around w-screen">
+        <div class="flex w-full">
+            <app-header class="flex w-full" [ngClass]="{'header-phone': isPhonePortrait}"></app-header>
         </div>
     </div>
-    <div class="flex flex-column align-content-center align-items-center justify-content-center w-screen footer">
-        <app-footer></app-footer>
+    <div class="flex flex-wrap flex-column gap-5 w-screen content">
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
     </div>
-</div>
+    <div class="flex align-items-center justify-content-around w-screen">
+        <div class="flex w-full">
+            <app-footer class="flex w-full"></app-footer>
+        </div>
+    </div>  
+  </div>

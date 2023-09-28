@@ -1,19 +1,42 @@
+.content {
+    flex-direction: row;
+}
+
+.content.phone {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+
+    .buttons {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .title {
+        justify-content: center;
+    }
+}
+
 .title {
-    width: 30%;
-    display: flex;
     justify-content: flex-start;
-    align-items: center;
     gap: 1rem;
+
+    font-family: 'Poppins', sans-serif !important;
+    color: #F8F9FA;
+    font-weight: 700;
+
+    .logo {
+        width: 5%;
+        height: auto;
+    }
+    
+    .logo.phone {
+        width: 50%;
+        height: auto;
+    }
 }
 
-img {
-    width: 5%;
-    height: auto;
-}
+.active {
+    border: solid 1px;
+} 
 
-.buttons {
-    width: 70%;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-}
