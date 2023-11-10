@@ -1,1 +1,18 @@
-<p>search-dog works!</p>
+<div class="flex flex-row w-screen h-full container" [ngClass]="{'phone': isPhonePortrait}">
+    <div class="flex flex-column justify-content-center align-items-center align-content-center w-7 h-auto">
+        <div class="flex flex-column w-11 h-auto max-h-full gap-5 overflow-auto posts">
+            <app-post></app-post>
+            <app-post></app-post>
+            <app-post></app-post>
+        </div>
+    </div>
+    <div class="flex flex-column justify-content-center align-items-center align-content-center w-5 h-auto form">
+        <div class="flex flex-column w-full h-auto max-h-full overflow-hidden posts">
+            <div class="flex justify-content-center align-items-center title">
+                <span>KERESEK EGY KUTYÁT</span>
+            </div>
+            <app-form ></app-form>
+        </div>
+    </div>
+</div>
+

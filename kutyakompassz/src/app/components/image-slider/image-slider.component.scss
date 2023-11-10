@@ -1,0 +1,61 @@
+$nola-orange: 'primary';
+
+.slider {
+    position: relative;
+    width: 60vw;
+    height: 45vh;
+    overflow: hidden;
+}
+
+.slider.is-phone-portrait {
+    width: 100vw;
+    height: 17.5vh;
+    margin-left: 0.5rem;
+}
+
+.content {
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    color: #ffffff;
+    font-family: 'Poppins' !important;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+    opacity: 70%;
+    text-shadow: 1px 1px 0px $nola-orange, -1px -1px 0px $nola-orange;
+}
+
+.pi {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 70%;
+
+    .pi-chevron-right {
+        position: absolute;
+        right: 0;
+    }
+}
+
+.paginator {
+    font-family: 'Poppins' !important;
+    color: white;
+    opacity: 70%;
+}
+
+.arrow {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff;;
+    padding: 0.75rem;
+    margin: 0.25rem;
+}
+
+a:hover {
+    background-color: #d4cdcd;
+}

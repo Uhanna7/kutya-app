@@ -1,0 +1,44 @@
+$basic-grey: #424242;
+
+.content {
+    flex-direction: row;
+}
+
+.content.phone {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+
+    .buttons {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .title {
+        justify-content: center;
+    }
+}
+
+.title {
+    justify-content: flex-start;
+    gap: 1rem;
+
+    font-family: 'Poppins', sans-serif !important;
+    color: #F8F9FA;
+    font-weight: 700;
+
+    .logo {
+        width: 10%;
+        height: auto;
+    }
+    
+    .logo.phone {
+        width: 50%;
+        height: auto;
+    }
+}
+
+.active {
+    background-color: rgb(66,66,66, 0.5);
+}
+
