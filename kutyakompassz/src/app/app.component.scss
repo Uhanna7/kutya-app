@@ -1,23 +1,30 @@
 $basic-grey: #424242;
+$primary-purple: #7b1fa2;
+$accent-green: #63daa2;
+$background-grey: #212529;
 
-.container {
-    background-color: $basic-grey;
+.app {
+    background-color: black;
 }
 
-app-header {
+.header {
     height: 7.5vh;
-    padding: 0;
-}
-
-app-footer {
-    height: 20vh;
-    background-color: #000000de;
-}
-
-.content {
-    height: 85vh;
 }
 
 .header-phone {
     height: 35vh;
+}
+
+.content {
+    min-height: 72.5vh;
+    width: 100%;
+}
+
+.footer {
+    height: 20vh;
+    background-color: $background-grey;
+}
+
+app-footer {
+    padding: 1rem;
 }

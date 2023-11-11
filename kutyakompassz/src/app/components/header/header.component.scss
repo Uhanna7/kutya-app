@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 $basic-grey: #424242;
+$primary-purple: #7b1fa2;
+$accent-green: #63daa2;
+$background-grey: #212529;
 
 .content {
     flex-direction: row;
@@ -23,8 +28,8 @@ $basic-grey: #424242;
     justify-content: flex-start;
     gap: 1rem;
 
-    font-family: 'Poppins', sans-serif !important;
-    color: #F8F9FA;
+    font-family: 'Montserrat', sans-serif;    
+    color: white;
     font-weight: 700;
 
     .logo {
