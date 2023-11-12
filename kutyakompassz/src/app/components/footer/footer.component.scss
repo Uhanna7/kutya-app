@@ -8,6 +8,7 @@ $background-grey: #212529;
 .container {
     background-color: $background-grey;
     color: white;
+    display: flex;
 }
 
 .first, .second {

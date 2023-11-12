@@ -5,15 +5,12 @@ $primary-purple: #7b1fa2;
 $accent-green: #63daa2;
 $background-grey: #212529;
 
-.container {
+.content {
     font-family: 'Montserrat', sans-serif;    
     color: white;
     letter-spacing: 0.15rem;
     line-height: 1.25;
-
-    .content {
-        padding: 2rem;
-    }
+    padding: 2rem;
 }
 
 .image, .map {

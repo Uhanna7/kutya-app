@@ -1,4 +1,4 @@
-<div class="flex flex-wrap align-content-center justify-content-center align-items-center w-full h-full container">
+<div class="flex flex-column align-content-center align-items-center justify-content-evenly w-full h-full container">
     <div class="flex flex-nowrap align-items-center justify-content-between first">
         <div class="flex gap-5 left" [ngClass]="{'phone': isPhonePortrait}">
             <span class="title" [ngClass]="{'phone': isPhonePortrait}">KUTYAKOMPASSZ</span>
@@ -16,7 +16,7 @@
             <span>1088, North Street, Alexandria, AU</span>
         </div>
         <div class="right" [ngClass]="{'phone': isPhonePortrait}">
-            <span>© 2023, All Rights Reserved</span>
+            <button mat-raised-button color="accent">ADMIN</button>
         </div>
     </div>
 </div>
