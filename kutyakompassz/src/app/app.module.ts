@@ -30,6 +30,7 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import {MatRadioModule} from '@angular/material/radio';
     MatFormFieldModule,
     MatInputModule, 
     MatRadioModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

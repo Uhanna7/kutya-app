@@ -8,6 +8,8 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
   styleUrls: ['./post.component.scss']
 })
 export class PostComponent {
+  
+
   images: string[] = [
     '../assets/blog1.png',
     '../assets/blog2.png',
