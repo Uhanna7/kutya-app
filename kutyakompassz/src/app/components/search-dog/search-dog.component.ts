@@ -1,5 +1,5 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-search-dog',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-dog.component.scss']
 })
 export class SearchDogComponent {
+  @Input() posts!: {title: string, date: string, images: string[], description: string}[];
   isPhonePortrait = false;
 
   constructor(private responsive: BreakpointObserver) {}
@@ -20,5 +21,4 @@ export class SearchDogComponent {
       }
     });
   }
-
 }

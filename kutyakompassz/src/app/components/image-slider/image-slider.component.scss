@@ -1,4 +1,10 @@
-$nola-orange: 'primary';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+$basic-grey: #424242;
+$primary-purple: #7b1fa2;
+$accent-green: #63daa2;
+$background-grey: #212529;
+
 
 .slider {
     position: relative;
@@ -20,14 +26,14 @@ $nola-orange: 'primary';
 }
 
 .text {
-    color: #ffffff;
-    font-family: 'Poppins' !important;
+    font-family: 'Montserrat', sans-serif !important; 
     text-align: center;
-    font-weight: 700;
-    font-size: 1.5rem;
-    letter-spacing: 0.25rem;
+    color: white;
+    letter-spacing: 0.15rem;
+    line-height: 1.25;
+    padding: 2rem;
     opacity: 70%;
-    text-shadow: 1px 1px 0px $nola-orange, -1px -1px 0px $nola-orange;
+    // text-shadow: 1px 1px 0px $nola-orange, -1px -1px 0px $nola-orange;
 }
 
 .pi {
@@ -43,7 +49,7 @@ $nola-orange: 'primary';
 }
 
 .paginator {
-    font-family: 'Poppins' !important;
+    font-family: 'Montserrat', sans-serif !important; 
     color: white;
     opacity: 70%;
 }
@@ -51,7 +57,7 @@ $nola-orange: 'primary';
 .arrow {
     cursor: pointer;
     border-radius: 50%;
-    background-color: #fff;;
+    background-color: white;;
     padding: 0.75rem;
     margin: 0.25rem;
 }
