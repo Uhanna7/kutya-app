@@ -5,10 +5,15 @@ $background-grey: #212529;
 
 .app {
     background-color: black;
+    position: relative;
 }
 
 .header {
     height: 7.5vh;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .header-phone {
@@ -17,14 +22,9 @@ $background-grey: #212529;
 
 .content {
     min-height: 72.5vh;
-    width: 100%;
 }
 
 .footer {
     height: 20vh;
     background-color: $background-grey;
-}
-
-app-footer {
-    padding: 1rem;
 }
