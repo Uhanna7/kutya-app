@@ -16,6 +16,13 @@ $background-grey: #212529;
 .image, .map {
     overflow: hidden;
     height: 40rem;
+    width: 41.6667%;
+    gap: 2rem;
+}
+
+.desc, .help {
+    width: 58.3333%;
+    gap: 2rem;
 }
 
 .title {
@@ -49,4 +56,32 @@ $background-grey: #212529;
 
 .help-block {
     padding: 0.5rem;
+}
+
+.top, .bottom {
+    gap: 2rem;
+}
+
+.phone {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+    .text {
+        font-size: 1.25rem;
+    }
+
+    .response {
+        font-size: 1rem;
+    }
+
+    .desc, .image, .map, .help{
+        width: 95%;
+        height: auto;
+
+        img {
+            width: 100%;
+            overflow: hidden;
+        }
+    }
 }

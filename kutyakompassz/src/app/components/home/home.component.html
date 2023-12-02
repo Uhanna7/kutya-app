@@ -1,7 +1,7 @@
 <div class="flex flex-column gap-5 w-full h-full max-w-full container">
     <div class="flex flex-column gap-5 content">
-        <div class="flex justify-content-center align-items-center w-full max-w-full gap-5 top">
-            <div class="flex flex-column gap-5 w-7 desc">
+        <div class="flex justify-content-center align-items-center w-full max-w-full top" [ngClass]="{'phone': isPhonePortrait}">
+            <div class="flex flex-column gap-5 desc">
                 <span class="flex justify-content-center align-items-center title">RÓLUNK</span>
                 <div class="text">
                     <p class="description">
@@ -21,15 +21,15 @@
                     </p>
                 </div>
             </div>
-            <div class="flex w-5 max-w-max image">
+            <div class="flex max-w-max image">
                 <img src="../../assets/blog1.png">
             </div>
         </div>
-        <div class="flex w-full max-w-full gap-5 bottom">
-            <div class="flex w-5 max-w-max map">
+        <div class="flex justify-content-center align-items-center w-full max-w-full bottom" [ngClass]="{'phone': isPhonePortrait}">
+            <div class="flex max-w-max map">
                 <img src="../../assets/blog1.png">
             </div>
-            <div class="flex flex-column gap-5 w-7 help">
+            <div class="flex flex-column gap-5 help">
                 <span class="flex justify-content-center align-items-center title"><i class="pi pi-question-circle"></i>SÚGÓ</span>
                 <div class="text" *ngFor="let item of help; let i = index">
                     <div class="help-block">

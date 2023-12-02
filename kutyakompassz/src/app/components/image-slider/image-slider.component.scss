@@ -33,7 +33,6 @@ $background-grey: #212529;
     line-height: 1.25;
     padding: 2rem;
     opacity: 70%;
-    // text-shadow: 1px 1px 0px $nola-orange, -1px -1px 0px $nola-orange;
 }
 
 .pi {
@@ -64,4 +63,10 @@ $background-grey: #212529;
 
 a:hover {
     background-color: #d4cdcd;
+}
+
+.phone {
+    .text {
+       padding: 1rem;
+    }
 }
